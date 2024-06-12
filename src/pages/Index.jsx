@@ -1,6 +1,7 @@
 import { Container, VStack, SimpleGrid } from "@chakra-ui/react";
 import Header from "../components/Header";
 import ArticleCard from "../components/ArticleCard";
+import "../styles/background.css";
 
 const sampleArticles = [
   {
@@ -22,7 +23,7 @@ const sampleArticles = [
 
 const Index = () => {
   return (
-    <Container maxW="container.xl" p={0}>
+    <Container className="ft-bg-color" maxW="container.xl" p={0}>
       <Header />
       <VStack spacing={8} py={8} px={4}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8}>
